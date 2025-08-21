@@ -107,19 +107,32 @@ o	Color scale (if saving videos).
 
 ________________________________________
 Generating Simulated Low-Speed Images
+
 •	Prepare volumetric image data (*.3DU16).
+
 •	Use ISOP creation of simulated low-speed images to generate and save simulated image files (*.3DU16).
+
 ________________________________________
 PSF Data Analysis
+
 1.	Load volumetric image data (*.3DU16) of 200-nm fluorescent beads using ISOP PSF analysis-1. Manually select individual bead images and save.
 2.	Preview the saved data using ISOP PSF analysis-2.
+   
 ________________________________________
 Numerical Simulation of PSF
+
 •	Use ISOP PSF numerical simulation with specified parameters (NA, immersion medium, wavelength, etc.).
+
 ________________________________________
 Format of *.3DU16 Files (binary format for reconstructed volumetric image data)
+
 •	1D array (3 elements, double): voxel size in z, y, x [µm].
+
 •	1D array (5 elements, 32-bit signed int): number of volumes, number of channels, voxels in x, y, z.
+
 •	4D array of voxel counts at t = 0 (16-bit unsigned int): [channel, z, y, x].
+
 •	4D arrays at subsequent time points (t = 1 … n): same index order.
+
 Array format: (num elements of 1st dim, 32-bit unsigned int) (num elements of 2nd dim, 32-bit unsigned int) … (num elements of nth dim, 32-bit unsigned int) (element 000) (element 001) … (element m1m2…mn).
+
