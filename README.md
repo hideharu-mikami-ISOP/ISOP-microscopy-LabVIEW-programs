@@ -19,7 +19,7 @@ Prerequisites
 2.	Set up a local network to allow workstation communication via TCP/IP or UDP.
 3.	Install LabVIEW (64-bit, 2024 Q3 or later) on the control machine. The Vision Development Module, NI-DAQmx, and NI-VISA are required.
 4.	Prepare and connect the experimental setup properly (see Methods, Extended Data Fig. 1, Supplementary Fig. 6, and Supplementary Table 1).
-5.	Install drivers for the AWG, cameras, and USB oscilloscope. When each VI is opened for the first time, verify that the required DLLs are properly referenced.
+5.	Install drivers for the AWG, cameras, and USB oscilloscope. When each VI is opened for the first time, verify that the required VIs and DLLs related to the drivers are properly referenced.
 ________________________________________
 Image Acquisition Workflow
 
