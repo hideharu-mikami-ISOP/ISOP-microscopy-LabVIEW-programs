@@ -26,46 +26,83 @@ Image Acquisition Workflow
 Step 1
 
 •	Launch ISOP microscope control console.
+
 •	Launch ISOP galvo calibration.
+
 •	Adjust G1 and G2 waveforms by changing parameters on Launch ISOP microscope control console.
+
 •	Outcome: finalized G1 calibration and coarse G2 calibration.
 
 Step 2
 
 •	Launch ISOP camera console on two machines in calibration mode. Select Master/Slave before launching. If using a single machine, launch Master only and enable “One PC.”
+
 •	Perform manual adjustments:
+
 o	Stop G1, monitor fluorescence images of beads, and manually adjust G2 and OL3 xyz position.
+
 o	Adjust Y-offset of the camera ROI.
+
 o	Adjust Y scanning range (AOD bandwidth).
+
 o	Align relative positions of the two color channels.
+
 •	Acquire calibration images of 10-µm fluorescent beads.
+
 •	For dynamic calibration:
+
 o	Launch ISOP recording of real-time waveforms for dynamic calibration in advance to record synchronized waveforms and images.
+
 o	Enable the “calib” button during image acquisition.
+
 •	Outcome: finalized G2 calibration, AWG adjustment, and camera calibration.
+
 Step 3
+
 •	Use ISOP image calibration and reconstruction to perform image calibration (slice extraction parameters).
+
 •	For dynamic calibration:
+
 o	Enable “calib using picoscope.”
+
 o	Use ISOP regression curve generation for dynamic calibration to obtain and save regression curves.
+
 •	Outcome: finalized slice extraction parameters for subsequent image reconstruction.
+
 Step 4
+
 •	Relaunch ISOP camera console in monitoring mode.
+
 •	Adjust overlay alignment between bright-field and fluorescence images.
+
 •	Adjust relative position between bright-field tracking image and fluorescence image.
+
 •	Mount the experimental sample, monitor a central frame of the volume, adjust z-position, and adjust excitation laser power if needed.
+
 •	Switch to recording mode (REC) to acquire experimental volumetric data with time stamps.
+
 •	On a separate machine, acquire and save bright-field tracking images, tracking positions, and time stamps.
+
 •	For dynamic calibration: launch ISOP recording of real-time waveforms for dynamic calibration in advance.
+
 •	Outcome: finalized alignment of monitoring/tracking images and storage of raw imaging data.
+
 Step 5
+
 •	Open acquired image frames with ISOP image calibration and reconstruction.
+
 •	Reconstruct 3D images and adjust:
+
 o	Relative positions of two color channels.
+
 o	Slice extraction parameters.
+
 o	Color scale (if saving videos).
+
 •	Continue experimental imaging with adjusted parameters.
+
 •	After experiments, save adjustment parameters and reconstruction data.
+
 •	Outcome: finalized 3D fluorescence image data for analysis.
 
 ________________________________________
