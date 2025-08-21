@@ -22,12 +22,16 @@ Prerequisites
 5.	Install drivers for the AWG, cameras, and USB oscilloscope. When each VI is opened for the first time, verify that the required DLLs are properly referenced.
 ________________________________________
 Image Acquisition Workflow
+
 Step 1
+
 •	Launch ISOP microscope control console.
 •	Launch ISOP galvo calibration.
 •	Adjust G1 and G2 waveforms by changing parameters on Launch ISOP microscope control console.
 •	Outcome: finalized G1 calibration and coarse G2 calibration.
+
 Step 2
+
 •	Launch ISOP camera console on two machines in calibration mode. Select Master/Slave before launching. If using a single machine, launch Master only and enable “One PC.”
 •	Perform manual adjustments:
 o	Stop G1, monitor fluorescence images of beads, and manually adjust G2 and OL3 xyz position.
